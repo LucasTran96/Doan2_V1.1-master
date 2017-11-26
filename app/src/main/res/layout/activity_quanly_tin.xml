@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pcc.doan2_v1.QuanlyTinActivity">
+    <TextView
+        android:text="TIN TỨC ĐÃ ĐƯỢC CÔNG KHAI"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#070f87"
+        android:id="@+id/txt_public"
+        android:background="@drawable/background_login"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt_public"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/recyclerView_Active"/>
+    <TextView
+        android:layout_below="@+id/recyclerView_Active"
+        android:text="TIN TỨC CHƯA CÔNG KHAI"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#070f87"
+        android:id="@+id/txt_private"
+        android:background="@drawable/background_login"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt_private"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/recyclerView_NotActive"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:textColor="#070f87"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/background_login"
+        android:layout_width="match_parent"
+        android:text="Đăng Tin Mới"
+        android:layout_height="45dp"
+        android:id="@+id/btn_DangTin"
+        />
+</RelativeLayout>

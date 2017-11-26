@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pcc.doan2_v1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconvn"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconvn"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"  android:value="@string/facebook_app_id"/>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DangTinActivity" />
+        <activity android:name=".ThemChudeActivity" />
+        <activity android:name=".QuanlyTinActivity" />
+        <activity android:name=".QuanlyUserActivity" />
+        <activity android:name=".QuanlyChudeActivity" />
+        <activity android:name=".CapnhatChudeActivity" />
+        <activity android:name=".ChitietTinTucActivity" />
+        <activity android:name=".QuanLyBinhLuan" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommentActivity"/>
+    </application>
+
+</manifest>

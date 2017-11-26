@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context="com.example.pcc.doan2_v1.LoginActivity">
+    <LinearLayout
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_Username"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:hint="Email"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email"/>
+        <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_Password"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Login"
+            android:background="@drawable/background_login_btn"
+            android:textColor="#093273"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Register"
+            android:background="@drawable/background_register_btn"
+            android:textColor="#fff"
+            android:text="Đăng ký"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/btn_NotLogin"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Chỉ đọc tin tức"-->
+            <!--android:textColor="#ff0000"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_danhmuctintuc"
+            android:icon="@drawable/ic_danhmuctintuc"
+            android:title="Danh mục tin tức" />
+        <item
+            android:id="@+id/nav_dangxuat"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng xuất" />
+        <item
+            android:id="@+id/nav_thongtintaikhoan"
+            android:icon="@drawable/ic_thongtintaikhoan"
+            android:title="Thông tin tài khoản" />
+    </group>
+
+    <item android:title="Quản lý">
+        <menu>
+            <item
+                android:id="@+id/nav_quanlychude"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Quản lý chủ đề" />
+            <item
+                android:id="@+id/nav_quanlytintuc"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Quản lý tin tức" />
+            <item
+                android:id="@+id/nav_quanlyuser"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Quản lý người dùng" />
+            <item
+                android:id="@+id/nav_quanlybinhluan"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Quản lý bình luận" />
+        </menu>
+    </item>
+
+</menu>

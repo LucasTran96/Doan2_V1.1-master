@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+    <ListView
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_Comment"
+        android:layout_marginBottom="45dp"
+        />
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:hint="Nhập bình luận"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:background="@drawable/style_edt_postbinhluan"
+        android:id="@+id/edt_noiDungBinhLuan"/>
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_postBinhLuan"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_send_black_24dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

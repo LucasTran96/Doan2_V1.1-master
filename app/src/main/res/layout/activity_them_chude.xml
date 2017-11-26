@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pcc.doan2_v1.ThemChudeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM CHỦ ĐỀ"
+        android:background="#093273"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:textColorHint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_tenchude"
+            android:backgroundTint="@android:color/transparent"
+            android:singleLine="true"
+            android:hint="Tên chủ đề"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_themchude"
+        android:text="Thêm chủ đề vào CSDL"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/background_register_btn"/>
+</LinearLayout>

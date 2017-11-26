@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.pcc.doan2_v1.QuanlyChudeActivity">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textAllCaps="false"
+            android:textColor="#041b6b"
+            android:background="@drawable/background_login"
+            android:text="Thêm chủ đề"
+            android:id="@+id/btn_themchude"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        app:titleTextColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <TextView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:text="DANH SÁCH CHỦ ĐỀ HIỆN CÓ"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#041b6b"
+        android:background="@drawable/background_login"
+        android:id="@+id/txt_dscd"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt_dscd"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/recyclerView_Dscd"
+        android:layout_marginBottom="45dp"/>
+</RelativeLayout>
