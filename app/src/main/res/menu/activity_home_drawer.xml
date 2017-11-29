@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_danhmuctintuc"
             android:title="Danh mục tin tức" />
         <item
+            android:id="@+id/nav_tintucRSS"
+            android:icon="@drawable/ic_danhmuctintuc"
+            android:title="Tin tức liên kết" />
+        <item
             android:id="@+id/nav_dangxuat"
             android:icon="@drawable/ic_logout"
             android:title="Đăng xuất" />

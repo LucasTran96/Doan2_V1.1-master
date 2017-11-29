@@ -263,7 +263,12 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_danhmuctintuc) {
             // Handle the camera action
             Toast.makeText(getApplicationContext(),"Hiển thị danh mục tin tức hiện có",Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_dangxuat) {
+        }
+        else if (id == R.id.nav_tintucRSS) {
+
+            startActivity(new Intent(getApplicationContext(),HomeTinTucRSS.class));
+        }
+        else if (id == R.id.nav_dangxuat) {
             firebaseAuth.signOut();
             txtUsername.setText("");
             btn_DangNhap.setVisibility(View.VISIBLE);
