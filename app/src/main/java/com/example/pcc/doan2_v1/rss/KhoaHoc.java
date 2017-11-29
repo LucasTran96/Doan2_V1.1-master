@@ -36,7 +36,7 @@ import java.util.ArrayList;
 
 public class KhoaHoc extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    final String vnexpress="https://vnexpress.net/rss/kinh-doanh.rss";
+    final String vnexpress="https://vnexpress.net/rss/khoa-hoc.rss";
     ListView lv;
     NewsAdapter adapter;
     ArrayList<NewsModel> list=new ArrayList<>();

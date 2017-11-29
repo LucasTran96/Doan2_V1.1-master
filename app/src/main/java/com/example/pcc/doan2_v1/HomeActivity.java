@@ -90,7 +90,7 @@ public class HomeActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         View header=navigationView.getHeaderView(0);
         btn_DangNhap=header.findViewById(R.id.btnDangnhap);
@@ -309,6 +309,7 @@ public class HomeActivity extends AppCompatActivity
                     Tintuc tintuc=snapshot.getValue(Tintuc.class);
                     if(tintuc.getActive()==1)
                     listTintuc.add(tintuc);
+
                 }
                 adapter=new MyAdapter(getApplicationContext(),listTintuc,txtUsername.getText().toString());
                 recyclerView.setAdapter(adapter);
